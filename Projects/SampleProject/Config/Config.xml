@@ -1,0 +1,34 @@
+<Environment>
+	<Variable>
+		<Name>Environment</Name> <!--Test Instance-->
+		<Value><![CDATA[QA]]></Value>
+	</Variable>
+	<Variable>  <!--Chrome Browser Flag-->
+		<Name>ChromeBrowser</Name>
+		<Value><![CDATA[YES]]></Value>
+	</Variable>	
+	<Variable>  <!--IE Browser Flag-->
+		<Name>IEBrowser</Name>
+		<Value><![CDATA[NO]]></Value>
+	</Variable>
+	<Variable>  <!--FireFox Browser Flag-->
+		<Name>FireFoxBrowser</Name>
+		<Value><![CDATA[NO]]></Value>
+	</Variable>
+	<Variable>
+		<Name>HRMSAppURL</Name>
+		<Value><![CDATA[https://opensource-demo.orangehrmlive.com/]]></Value>
+	</Variable>
+	<Variable>
+		<Name>HRMSUsername</Name>
+		<Value><![CDATA[Admin]]></Value>
+	</Variable>
+	<Variable>
+		<Name>HRMSPassword</Name>
+		<Value><![CDATA[admin123]]></Value>
+	</Variable>
+	<Variable>
+		<Name>Module</Name>
+		<Value><![CDATA[SampleProject]]></Value>
+	</Variable>
+</Environment>

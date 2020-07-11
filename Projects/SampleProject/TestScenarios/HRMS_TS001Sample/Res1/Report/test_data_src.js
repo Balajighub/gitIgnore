@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\CTAF\\Projects\\SampleProject\\TestScenarios\\HRMS_TS001Sample\\Res1',namePairs:[]}]};
