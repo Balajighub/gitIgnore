@@ -1,7 +1,8 @@
 **/thumbs.db     
 **/*.lck		
 **/*.png
-**/TestExecutionPlan/*
+**/TestExecutionPlan
+**/*.zip
 **/*~$
 
 
