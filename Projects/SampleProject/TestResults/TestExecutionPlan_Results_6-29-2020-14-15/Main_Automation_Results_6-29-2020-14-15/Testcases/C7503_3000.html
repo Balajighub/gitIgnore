@@ -1,0 +1,847 @@
+<html>
+
+<head> 
+
+<style type="text/css">.passed{display: table-row; background-color: #E1E1E1; border: 1px solid #4D7C7B; color: #000000; font-size: 0.75em; td, th { padding: 5px; border: 1px solid #4D7C7B; text-align: inherit /; } th.Logos { padding: 5px; border: 0px solid #4D7C7B; text-align: inherit /;} td.justified { text-align: Left; } td.pass { font-weight: bold; color: green; } </style>
+
+<style type="text/css">.failed{display: table-row;background-color: #FFFFFF; color: #000000; font-size: 0.7em; display: table-row;} </style>
+<style type="text/css">.notvisible{display: None; </style>
+<meta charset='UTF-8'> 
+<title>Detailed Results Report</title>
+
+<style type='text/css'>
+
+body { background-color: #FFFFFF; font-family: Verdana, Geneva, sans-serif; text-align: center; } small { font-size: 0.7em; } table { box-shadow: 9px 9px 10px 4px #BDBDBD;border: 0px solid #4D7C7B; border-collapse: collapse; border-spacing: 0px; width: 1000px; margin-left: auto; margin-right: auto; } tr.heading { background-color: #041944;color: #FFFFFF; font-size: 0.7em; font-weight: bold; background:-o-linear-gradient(bottom, #999999 5%, #000000 100%);background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #999999), color-stop(1, #000000));background:-moz-linear-gradient( center top, #999999 5%, #000000 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#999999, endColorstr=#000000); background: -o-linear-gradient(top,#999999,000000);} tr.subheading { background-color: #FFFFFF; color: #000000; font-weight: bold; font-size: 0.7em; text-align: justify; } tr.section { background-color: #A4A4A4; color: #333300; cursor: pointer; font-weight: bold; font-size: 0.7em; text-align: justify; background:-o-linear-gradient(bottom, #56aaff 5%, #e5e5e5 100%); background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56aaff), color-stop(1, #e5e5e5));background:-moz-linear-gradient( center top, #56aaff 5%, #e5e5e5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#56aaff, endColorstr=#e5e5e5); background: -o-linear-gradient(top,#56aaff,e5e5e5);} tr.subsection { cursor: pointer; } td, th { padding: 5px; border: 1px solid #4D7C7B; text-align: inherit /; } th.Logos { padding: 5px; border: 0px solid #4D7C7B; text-align: inherit /;} 
+
+</style>
+
+</head>
+
+<body>
+</br>
+<table id='Logos'> 
+
+<colgroup>
+
+<col style='width: 25%' />
+
+<col style='width: 25%' />
+
+<col style='width: 25%' />
+
+<col style='width: 25%' />
+
+</colgroup>
+
+<thead>
+
+<tr class='content'>
+
+<th class ='Logos' colspan='2' > <img align ='left' src='..\Logos\Clientlogo.png ' height=60 width=140></img> </th>
+<th class = 'Logos' colspan='2' > <img align ='right' src= '..\Logos\Companylogo.png' height=60 width=140></img></th> </tr> 
+
+</thead>
+
+</table><table id='header'> 
+
+<colgroup> <col style='width: 25%' /> 
+
+<col style='width: 25%' /> 
+
+<col style='width: 25%' /> 
+
+<col style='width: 25%' /> 
+
+</colgroup>
+
+<thead>
+
+<tr class='heading'> 
+
+<th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'> **C7503_3000 **</th>
+
+</tr> 
+
+<tr class='subheading'>
+
+<th>&nbsp;Date&nbsp;&&nbsp;Time&nbsp;&nbsp;</th> 
+
+<th>29-Jun-2020 14:15</th>
+
+<th>&nbsp;Operating&nbsp;System&nbsp;:&nbsp;</th>
+
+<th> Microsoft Windows 7</th> 
+
+</tr> 
+
+<tr class='subheading'>
+
+<!-- Overall Test Status --><tr><th colspan = 4 bgcolor='red'><font color='White'>FAILED </font></th></tr></thead> </table>
+</tr> 
+
+</thead>
+
+</table>
+
+<table id='main' cellpadding="0" cellspacing="0"> 
+
+<Head>
+
+<Body>
+
+<colgroup>
+
+<col style='width: 5%' /> <col style='width: 26%' /> <col style='width: 51%' /> 
+
+<col style='width: 8%' /> <col style='width: 10%' />
+
+</colgroup>
+<thead>
+<tr class='heading'>
+<th>S.No</th> 
+<th>Step
+<INPUT id="txtStepValue"  onchange="filterStatus()">
+</th> 
+<th>Details
+<INPUT id ="txtDetailsValue"  onchange="filterDetails()">
+</th> 
+<th> Status
+<select id="filter" onchange="filter()">
+<option value="all">All</option> 
+<option value="passed">Passed</option>
+<option value="failed">Failed</option>
+</select>
+</th>
+<th>Time</th>
+</tr> 
+
+
+
+
+
+<script type="text/javascript">
+
+function filter()
+
+{
+
+if(document.getElementById("filter").value=="passed")
+
+{
+
+document.getElementsByTagName("style")[0].textContent = ".passed{display: table-row;background-color: #E1E1E1; border: 1px solid #4D7C7B; color: #000000; font-size: 0.75em;}";
+
+document.getElementsByTagName("style")[1].textContent = ".failed{display: none;}";
+
+}
+
+else if (document.getElementById("filter").value=="failed")
+
+{
+
+document.getElementsByTagName("style")[1].textContent = ".failed{display: table-row;background-color: #FFFFFF;color: #000000; font-size: 0.7em; display: table-row;}";
+
+document.getElementsByTagName("style")[0].textContent = ".passed{display: none;}";
+
+}
+
+else
+
+{
+
+document.getElementsByTagName("style")[0].textContent = ".passed{display: table-row;background-color: #E1E1E1; border: 1px solid #4D7C7B; color: #000000; font-size: 0.75em;}";
+
+document.getElementsByTagName("style")[1].textContent = ".failed{display: table-row;background-color: #FFFFFF;color: #000000; font-size: 0.7em; display: table-row;}";
+
+}
+
+}
+
+</script>
+
+<script type="text/javascript">
+function filterStatus()
+{
+searchtext = (document.getElementById("txtStepValue").value).toLowerCase();
+if(searchtext!="")
+{
+var rowIndex = 0; // rowindex, in this case the first row of your table
+var table = document.getElementById('main'); // table to perform search on
+var row = table.getElementsByTagName("tr");
+irowcount = row.length
+for (i = 1; i < row.length; i++) {
+status = (row[i].getElementsByTagName("td")[1].textContent).toLowerCase();
+if (status.indexOf(searchtext) == -1) 
+{
+row[i].className = 'content notvisible'
+}}}
+else {
+window.location.reload()
+}}
+</script>
+<script type="text/javascript">
+function filterDetails()
+{
+searchtext = (document.getElementById("txtDetailsValue").value).toLowerCase();
+if(searchtext!="")
+{
+var rowIndex = 0; // rowindex, in this case the first row of your table
+var table = document.getElementById('main'); // table to perform search on
+var row = table.getElementsByTagName("tr");
+for (i = 1; i < row.length; i++) {
+Details = (row[i].getElementsByTagName("td")[2].textContent).toLowerCase();;
+if (Details.indexOf(searchtext) == -1) 
+{
+row[i].className = 'content notvisible'
+}}}
+else {
+window.location.reload()
+}}
+</script>
+<tr class='content passed' ><td align = 'center'>1</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>Start Iteration 1 </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Started Iteration 1</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:2</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>2</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>Start of PO Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Started PO Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:2</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>3</td> 
+<td class='justified'>Verify Ariba Application login page</td>
+<td class='justified'>Ariba login page is launched successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_15_10_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:15:11</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>4</td> 
+<td class='justified'>Enter value "autodigir2" in 'UserName' field</td>
+<td class='justified'>Successfully entered value as "autodigir2" in 'UserName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:11</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>5</td> 
+<td class='justified'>Enter value "********" in 'Password' field</td>
+<td class='justified'>Value successfully entered in 'Password' field</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:12</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>6</td> 
+<td class='justified'>Click on 'Login' button</td>
+<td class='justified'>Clicked on 'Login' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:14</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>7</td> 
+<td class='justified'>Verify Ariba Application login</td>
+<td class='justified'>Ariba Application is login successfully with Username autodigir2</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_15_22_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:15:22</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>8</td> 
+<td class='justified'>Click on 'Create' button</td>
+<td class='justified'>Clicked on 'Create' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:26</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>9</td> 
+<td class='justified'>Verify navigated to Create</td>
+<td class='justified'>Navigated successfully to Create->Requisition</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:28</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>10</td> 
+<td class='justified'>Enter value "CreatePurchaseRequisition" in 'Title' field</td>
+<td class='justified'>Successfully entered value as "CreatePurchaseRequisition" in 'Title</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:30</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>11</td> 
+<td class='justified'>Enter value "Mon,  29 Jun,  2020" in 'Delay Purchase' field</td>
+<td class='justified'>Successfully the field value entered as 'Delay Purchase'</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:31</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>12</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:40</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>13</td> 
+<td class='justified'>Select the value as '"CompanyCode"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:59</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>14</td> 
+<td class='justified'>Enter value "3000" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "3000" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:15:59</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>15</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:0</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>16</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:5</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>17</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 3000  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_16_05_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:16:5</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>18</td> 
+<td class='justified'>Enter value "AUTODESK 3000" in 'DeliverTo' field</td>
+<td class='justified'>Successfully entered value as "AUTODESK 3000" in 'DeliverTo</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:9</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>19</td> 
+<td class='justified'>Enter value "Create Requisition" in 'Comments' field</td>
+<td class='justified'>Successfully entered value as "Create Requisition" in 'Comments</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:9</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>20</td> 
+<td class='justified'>Fill Requisition summary details</td>
+<td class='justified'>Requisition details are filled in Summary section</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_16_10_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:16:10</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>21</td> 
+<td class='justified'>Click on 'ContinueShopping' button</td>
+<td class='justified'>Clicked on 'ContinueShopping' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:12</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>22</td> 
+<td class='justified'>Verify Catlog Home Page</td>
+<td class='justified'>Catlog Home page exists Successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_16_14_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:16:14</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>23</td> 
+<td class='justified'>Click on 'Add Non-Catolog' button</td>
+<td class='justified'>Clicked on 'Add Non-Catolog' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:21</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>24</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:32</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>25</td> 
+<td class='justified'>Select the value as '"Purchase Org."' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:51</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>26</td> 
+<td class='justified'>Enter value "3000" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "3000" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:51</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>27</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:52</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>28</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:57</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>29</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 3000  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_16_58_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:16:58</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>30</td> 
+<td class='justified'>Enter value "Line item 1" in 'Full Description' field</td>
+<td class='justified'>Successfully entered value as "Line item 1" in 'Full Description</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:16:58</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>31</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:6</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>32</td> 
+<td class='justified'>Select the value as '"Material Group"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:25</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>33</td> 
+<td class='justified'>Enter value "104PC" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "104PC" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:25</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>34</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:27</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>35</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:32</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>36</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 104PC  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_17_32_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:17:32</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>37</td> 
+<td class='justified'>Enter value "5" in 'Quantity' field</td>
+<td class='justified'>Successfully entered value as "5" in 'Quantity</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:33</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>38</td> 
+<td class='justified'>Select the value as '"Other..."' from 'Others' menu</td>
+<td class='justified'>Successfully the value selected from 'Others' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:17:42</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>39</td> 
+<td class='justified'>Select the value as '"ID"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:1</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>40</td> 
+<td class='justified'>Enter value "USD" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "USD" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:1</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>41</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:2</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>42</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:7</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>43</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and USD  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_18_07_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:18:7</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>44</td> 
+<td class='justified'>Enter value "1000" in 'Price' field</td>
+<td class='justified'>Successfully entered value as "1000" in 'Price</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:16</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>45</td> 
+<td class='justified'>Click on 'Update Amount' button</td>
+<td class='justified'>Clicked on 'Update Amount' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:17</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>46</td> 
+<td class='justified'>Retrieve Value In a Table </td>
+<td class='justified'>"'AmountFields'" retrieved value is : "AmountFields"</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_18_25_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:18:25</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>47</td> 
+<td class='justified'>Verify Updated Amount</td>
+<td class='justified'>Amount field is updated as $5,000.00 USD</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:25</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>48</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:34</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>49</td> 
+<td class='justified'>Select the value as '"ID"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:53</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>50</td> 
+<td class='justified'>Enter value "0000208077" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "0000208077" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:53</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>51</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:18:54</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>52</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:19:0</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>53</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 0000208077  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_19_00_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:19:0</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>54</td> 
+<td class='justified'>Fill Catalog Details</td>
+<td class='justified'>catalog details are filled</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_19_00_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:19:0</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>55</td> 
+<td class='justified'>Click on 'Add to Cart' button</td>
+<td class='justified'>Clicked on 'Add to Cart' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:19:1</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>56</td> 
+<td class='justified'>Fill Catalog Details</td>
+<td class='justified'>catalog details are filled</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_19_04_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:19:4</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>57</td> 
+<td class='justified'>Verify Proceed to Check</td>
+<td class='justified'>Procced to check is verified Successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_19_05_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:19:5</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>58</td> 
+<td class='justified'>Click on 'Proceed to Check' button</td>
+<td class='justified'>Clicked on 'Proceed to Check' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:19:7</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>59</td> 
+<td class='justified'>Select the value as '"Edit"' from 'Actions drop down' menu</td>
+<td class='justified'>Successfully the value selected from 'Actions drop down' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:19:33</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>60</td> 
+<td class='justified'>Select the value as '"K (Cost center)"' from 'Account Assignment' list</td>
+<td class='justified'>Successfully the value selected from 'Account Assignment' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:19:52</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>61</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:20:0</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>62</td> 
+<td class='justified'>Select the value as '"Address"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:20:19</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>63</td> 
+<td class='justified'>Enter value "3000" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "3000" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:20:19</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>64</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:20:21</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>65</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:20:26</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>66</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 3000  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_20_26_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:20:26</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>67</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:20:43</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>68</td> 
+<td class='justified'>Select the value as '"General Ledge"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:1</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>69</td> 
+<td class='justified'>Enter value "0000690020" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "0000690020" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:2</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>70</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:3</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>71</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:8</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>72</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 0000690020  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_21_08_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:21:8</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>73</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:25</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>74</td> 
+<td class='justified'>Select the value as '"Cost Center"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:44</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>75</td> 
+<td class='justified'>Enter value "3000300053" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "3000300053" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:44</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>76</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:46</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>77</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:21:51</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>78</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and 3000300053  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_21_51_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:21:51</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>79</td> 
+<td class='justified'>Fill Accounting - by Line Item</td>
+<td class='justified'>Accounting - by Line Item details are filled</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_21_51_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:21:51</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>80</td> 
+<td class='justified'>Select the value as '"Search more"' from 'SearchMore' menu</td>
+<td class='justified'>Successfully the value selected from 'SearchMore' menu</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:1</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>81</td> 
+<td class='justified'>Select the value as '"Plant"' from 'listType' list</td>
+<td class='justified'>Successfully the value selected from 'listType' list</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:20</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>82</td> 
+<td class='justified'>Enter value "CAS1" in 'SearchName' field</td>
+<td class='justified'>Successfully entered value as "CAS1" in 'SearchName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:20</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>83</td> 
+<td class='justified'>Click on 'SearchButton' button</td>
+<td class='justified'>Clicked on 'SearchButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:21</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>84</td> 
+<td class='justified'>Click on 'SelectButton' button</td>
+<td class='justified'>Clicked on 'SelectButton' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:26</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>85</td> 
+<td class='justified'>Verify Page navigated to 'Choose Value' popup window</td>
+<td class='justified'>Navigated successfully and CAS1  Value has been selected</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_22_26_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:22:26</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>86</td> 
+<td class='justified'>Enter value "ARB" in 'Purchase Group' field</td>
+<td class='justified'>Successfully entered value as "ARB" in 'Purchase Group</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:29</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>87</td> 
+<td class='justified'>Fill Shipping - by Line Item</td>
+<td class='justified'>Shipping - by Line Item details are filled</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_22_31_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:22:31</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>88</td> 
+<td class='justified'>Click on 'OK' button</td>
+<td class='justified'>Clicked on 'OK' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:33</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>89</td> 
+<td class='justified'>Click on 'Submit' button</td>
+<td class='justified'>Clicked on 'Submit' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:37</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>90</td> 
+<td class='justified'>Verify the Requsition is submitted</td>
+<td class='justified'>Requisition is submitted Successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_22_42_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:22:42</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>91</td> 
+<td class='justified'>Click on 'View Requisition' button</td>
+<td class='justified'>Clicked on 'View Requisition' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:22:53</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>92</td> 
+<td class='justified'>Verify View Requisition Screen is navigated</td>
+<td class='justified'>Navigated to View Requisition Screen Successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_23_01_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:23:1</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>93</td> 
+<td class='justified'>Verify Approvers are available to Delete</td>
+<td class='justified'>Approvers are available to Delete</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_23_09_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:23:9</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>94</td> 
+<td class='justified'>Click on 'Delete Approver --> OK' button</td>
+<td class='justified'>Clicked on 'Delete Approver --> OK' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:23:12</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>95</td> 
+<td class='justified'>Click on 'Delete Approver --> OK' button</td>
+<td class='justified'>Clicked on 'Delete Approver --> OK' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:23:31</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>96</td> 
+<td class='justified'>Click on 'Delete Approver --> OK' button</td>
+<td class='justified'>Clicked on 'Delete Approver --> OK' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:23:50</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>97</td> 
+<td class='justified'>Click on 'Delete Approver --> OK' button</td>
+<td class='justified'>Clicked on 'Delete Approver --> OK' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:24:9</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>98</td> 
+<td class='justified'>Click on 'Delete Approver --> OK' button</td>
+<td class='justified'>Clicked on 'Delete Approver --> OK' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:24:28</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>99</td> 
+<td class='justified'>Verify Approvers are not available to Delete</td>
+<td class='justified'>Approvers are not available to Delete</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_24_45_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:24:45</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>100</td> 
+<td class='justified'>Verify Status after Creating Requisition</td>
+<td class='justified'>Status is diaplayed as Status: Approved</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:24:47</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>101</td> 
+<td class='justified'>Capture the Requisition ID</td>
+<td class='justified'>Requistion is diaplayed as REQ2032480</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_24_48_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:24:48</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>102</td> 
+<td class='justified'>Click on 'Search button' button</td>
+<td class='justified'>Clicked on 'Search button' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:24:53</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>103</td> 
+<td class='justified'>Verify Click on Search Button in Ariba page</td>
+<td class='justified'>Successfully Clicked on Search Button in Ariba Page</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:25:2</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>104</td> 
+<td class='justified'>Verify Purchase OrderClicked</td>
+<td class='justified'>Clicked successfully on Purchase Orderfield</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:25:3</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>105</td> 
+<td class='justified'>Verify Clicked on Purchase Order</td>
+<td class='justified'>Clicked successfully on Purchase Order</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:25:3</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>106</td> 
+<td class='justified'>Caompare values</td>
+<td class='justified'>Values are matched and the compared values are 'Purchase Order'</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_25_05_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:25:5</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>107</td> 
+<td class='justified'>Verify Screen navigation</td>
+<td class='justified'>Navigated to Purchase Order Screen Successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_25_05_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:25:5</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>108</td> 
+<td class='justified'>Verify PurchaseOrder ID</td>
+<td class='justified'>PurchaseOrder ID is Generated as "4500015107"</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_25_10_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:25:10</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>109</td> 
+<td class='justified'>Capture Payment Term ID</td>
+<td class='justified'>Payment Term ID is -DD05</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_25_15_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:25:16</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>110</td> 
+<td class='justified'>Click on 'UserLogout' button</td>
+<td class='justified'>Clicked on 'UserLogout' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:25:19</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>111</td> 
+<td class='justified'>Click on 'Logout' button</td>
+<td class='justified'>Clicked on 'Logout' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:25:21</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>112</td> 
+<td class='justified'>Logout  from Ariba page</td>
+<td class='justified'>Successfully logged out from Ariba application</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_25_30_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:25:30</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>113</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>End of PO Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Ended PO Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:25:31</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>127</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>Start of Invoice Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Started Invoice Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:37:19</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>128</td> 
+<td class='justified'>Verify 'Ariba Network Supplier' login page exist</td>
+<td class='justified'>'Ariba Network Supplier' login screen launched successfully</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_37_27_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:37:27</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>129</td> 
+<td class='justified'>Enter value "us1_adsk@autodesk.com" in 'UserName' field</td>
+<td class='justified'>Successfully entered value as "us1_adsk@autodesk.com" in 'UserName</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:37:27</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>130</td> 
+<td class='justified'>Enter value "********" in 'Password' field</td>
+<td class='justified'>Value successfully entered in 'Password' field</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:37:29</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>131</td> 
+<td class='justified'>Click on 'Login' button</td>
+<td class='justified'>Clicked on 'Login' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:37:30</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>132</td> 
+<td class='justified'>User log-in to 'Ariba Network Supplier' application</td>
+<td class='justified'>User "us1_adsk@autodesk.com" should be able to log-in to the application</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_37_41_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:37:41</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>133</td> 
+<td class='justified'>Enter value "4500015107" in 'PO Number' field</td>
+<td class='justified'>Successfully entered value as "4500015107" in 'PO Number</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:37:47</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>134</td> 
+<td class='justified'>Click on 'Search' button</td>
+<td class='justified'>Clicked on 'Search' button successfully</td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:37:53</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>135</td> 
+<td class='justified'>Search PO Number</td>
+<td class='justified'>Search PO Number - 4500015107</td> 
+<td class='Pass' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_37_59_PM.png>
+<img  src='..\Logos\PassWithScr.png' width='32' height='32'/></td> <td><small>29-Jun-2020 14:37:59</small></td> </tr>
+<tr class='content failed'><td align = 'center'>136</td> 
+<td class='justified'>Select the Action type in table</td>
+<td class='justified'>Action type is selected as Standard Invoice</td> 
+<td class='Fail' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_38_01_PM.png>
+<img  src='..\Logos\Fail.png' width='20' height='20'/></td> <td><small>29-Jun-2020 14:38:1</small></td> </tr>
+
+<tr class='content failed'><td align = 'center'>137</td> 
+<td class='justified'>Create Invoice Number</td>
+<td class='justified'>Invoice Number is not generated</td> 
+<td class='Fail' align='center'><a href=..\Screenshot\Screenshot6_29_2020_2_38_01_PM.png>
+<img  src='..\Logos\Fail.png' width='20' height='20'/></td> <td><small>29-Jun-2020 14:38:1</small></td> </tr>
+
+<tr class='content passed' ><td align = 'center'>138</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>End of Invoice Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Ended Invoice Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:38:3</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>139</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>Start of Credit Memo Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Started Credit Memo Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:38:3</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>140</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>End of Credit Memo Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Ended Credit Memo Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:38:3</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>155</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>End of Invoice Processing in VIM </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Ended Invoice Processing in VIM</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:39:9</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>156</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>End of Credit Memo Processing in VIM </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Ended Credit Memo Processing in VIM</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 14:39:12</small></td> </tr>

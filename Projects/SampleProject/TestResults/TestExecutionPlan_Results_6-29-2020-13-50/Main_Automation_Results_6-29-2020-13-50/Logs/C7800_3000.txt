@@ -1,0 +1,35 @@
+Test Name	Expected	Status	Time
+C7800_3000	<font face="Century Gothic" color="blue"><b> Started Iteration 1</b></font>	PASS	6/29/2020 2:00:52 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Started PO Creation Steps</b></font>	PASS	6/29/2020 2:00:52 PM
+C7800_3000	Ariba login page is launched successfully	PASS	6/29/2020 2:01:01 PM
+C7800_3000	Successfully entered value as "autodigir2" in 'UserName	PASS	6/29/2020 2:01:01 PM
+C7800_3000	Value successfully entered in 'Password' field	PASS	6/29/2020 2:01:03 PM
+C7800_3000	Clicked on 'Login' button successfully	PASS	6/29/2020 2:01:04 PM
+C7800_3000	Ariba Application is login successfully with Username autodigir2	PASS	6/29/2020 2:01:13 PM
+C7800_3000	Clicked on 'Create' button successfully	PASS	6/29/2020 2:01:17 PM
+C7800_3000	Navigated successfully to Create->Requisition	PASS	6/29/2020 2:01:19 PM
+C7800_3000	Successfully entered value as "CreatePurchaseRequisition" in 'Title	PASS	6/29/2020 2:01:20 PM
+C7800_3000	Successfully the field value entered as 'Delay Purchase'	PASS	6/29/2020 2:01:22 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:01:31 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:01:50 PM
+C7800_3000	Successfully entered value as "3000" in 'SearchName	PASS	6/29/2020 2:01:50 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:01:51 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:01:57 PM
+C7800_3000	Navigated successfully and 3000  Value has been selected	PASS	6/29/2020 2:01:57 PM
+C7800_3000	Successfully entered value as "AUTODESK 3000" in 'DeliverTo	PASS	6/29/2020 2:02:00 PM
+C7800_3000	Successfully entered value as "Create Requisition" in 'Comments	PASS	6/29/2020 2:02:00 PM
+C7800_3000	Requisition details are filled in Summary section	PASS	6/29/2020 2:02:01 PM
+C7800_3000	Clicked on 'ContinueShopping' button successfully	PASS	6/29/2020 2:02:03 PM
+C7800_3000	Catlog Home page exists Successfully	PASS	6/29/2020 2:02:05 PM
+C7800_3000	Clicked on 'Add Non-Catolog' button successfully	PASS	6/29/2020 2:02:12 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:02:23 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:02:42 PM
+C7800_3000	Successfully entered value as "3000" in 'SearchName	PASS	6/29/2020 2:02:42 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:02:44 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:02:49 PM
+C7800_3000	Navigated successfully and 3000  Value has been selected	PASS	6/29/2020 2:02:49 PM
+C7800_3000	Successfully entered value as "Line item 1" in 'Full Description	PASS	6/29/2020 2:02:49 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:02:58 PM
+C7800_3000	Failed to Navigated 'Choose Value' Popup window and 104PC value is not selected	FAIL	6/29/2020 2:05:30 PM
+C7800_3000	Value is not entered in ""	FAIL	6/29/2020 2:05:30 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Ended PO Creation Steps</b></font>	PASS	6/29/2020 2:05:31 PM

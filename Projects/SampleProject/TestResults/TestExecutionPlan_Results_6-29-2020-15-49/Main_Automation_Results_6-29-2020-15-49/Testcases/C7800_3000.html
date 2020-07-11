@@ -1,0 +1,210 @@
+<html>
+
+<head> 
+
+<style type="text/css">.passed{display: table-row; background-color: #E1E1E1; border: 1px solid #4D7C7B; color: #000000; font-size: 0.75em; td, th { padding: 5px; border: 1px solid #4D7C7B; text-align: inherit /; } th.Logos { padding: 5px; border: 0px solid #4D7C7B; text-align: inherit /;} td.justified { text-align: Left; } td.pass { font-weight: bold; color: green; } </style>
+
+<style type="text/css">.failed{display: table-row;background-color: #FFFFFF; color: #000000; font-size: 0.7em; display: table-row;} </style>
+<style type="text/css">.notvisible{display: None; </style>
+<meta charset='UTF-8'> 
+<title>Detailed Results Report</title>
+
+<style type='text/css'>
+
+body { background-color: #FFFFFF; font-family: Verdana, Geneva, sans-serif; text-align: center; } small { font-size: 0.7em; } table { box-shadow: 9px 9px 10px 4px #BDBDBD;border: 0px solid #4D7C7B; border-collapse: collapse; border-spacing: 0px; width: 1000px; margin-left: auto; margin-right: auto; } tr.heading { background-color: #041944;color: #FFFFFF; font-size: 0.7em; font-weight: bold; background:-o-linear-gradient(bottom, #999999 5%, #000000 100%);background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #999999), color-stop(1, #000000));background:-moz-linear-gradient( center top, #999999 5%, #000000 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#999999, endColorstr=#000000); background: -o-linear-gradient(top,#999999,000000);} tr.subheading { background-color: #FFFFFF; color: #000000; font-weight: bold; font-size: 0.7em; text-align: justify; } tr.section { background-color: #A4A4A4; color: #333300; cursor: pointer; font-weight: bold; font-size: 0.7em; text-align: justify; background:-o-linear-gradient(bottom, #56aaff 5%, #e5e5e5 100%); background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56aaff), color-stop(1, #e5e5e5));background:-moz-linear-gradient( center top, #56aaff 5%, #e5e5e5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#56aaff, endColorstr=#e5e5e5); background: -o-linear-gradient(top,#56aaff,e5e5e5);} tr.subsection { cursor: pointer; } td, th { padding: 5px; border: 1px solid #4D7C7B; text-align: inherit /; } th.Logos { padding: 5px; border: 0px solid #4D7C7B; text-align: inherit /;} 
+
+</style>
+
+</head>
+
+<body>
+</br>
+<table id='Logos'> 
+
+<colgroup>
+
+<col style='width: 25%' />
+
+<col style='width: 25%' />
+
+<col style='width: 25%' />
+
+<col style='width: 25%' />
+
+</colgroup>
+
+<thead>
+
+<tr class='content'>
+
+<th class ='Logos' colspan='2' > <img align ='left' src='..\Logos\Clientlogo.png ' height=60 width=140></img> </th>
+<th class = 'Logos' colspan='2' > <img align ='right' src= '..\Logos\Companylogo.png' height=60 width=140></img></th> </tr> 
+
+</thead>
+
+</table><table id='header'> 
+
+<colgroup> <col style='width: 25%' /> 
+
+<col style='width: 25%' /> 
+
+<col style='width: 25%' /> 
+
+<col style='width: 25%' /> 
+
+</colgroup>
+
+<thead>
+
+<tr class='heading'> 
+
+<th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'> **C7800_3000 **</th>
+
+</tr> 
+
+<tr class='subheading'>
+
+<th>&nbsp;Date&nbsp;&&nbsp;Time&nbsp;&nbsp;</th> 
+
+<th>29-Jun-2020 15:59</th>
+
+<th>&nbsp;Operating&nbsp;System&nbsp;:&nbsp;</th>
+
+<th> Microsoft Windows 7</th> 
+
+</tr> 
+
+<tr class='subheading'>
+
+<!-- Overall Test Status --><tr><th colspan = 4 bgcolor='green'><font color='White'>PASSED</font></th></tr>
+</tr> 
+
+</thead>
+
+</table>
+
+<table id='main' cellpadding="0" cellspacing="0"> 
+
+<Head>
+
+<Body>
+
+<colgroup>
+
+<col style='width: 5%' /> <col style='width: 26%' /> <col style='width: 51%' /> 
+
+<col style='width: 8%' /> <col style='width: 10%' />
+
+</colgroup>
+<thead>
+<tr class='heading'>
+<th>S.No</th> 
+<th>Step
+<INPUT id="txtStepValue"  onchange="filterStatus()">
+</th> 
+<th>Details
+<INPUT id ="txtDetailsValue"  onchange="filterDetails()">
+</th> 
+<th> Status
+<select id="filter" onchange="filter()">
+<option value="all">All</option> 
+<option value="passed">Passed</option>
+<option value="failed">Failed</option>
+</select>
+</th>
+<th>Time</th>
+</tr> 
+
+
+
+
+
+<script type="text/javascript">
+
+function filter()
+
+{
+
+if(document.getElementById("filter").value=="passed")
+
+{
+
+document.getElementsByTagName("style")[0].textContent = ".passed{display: table-row;background-color: #E1E1E1; border: 1px solid #4D7C7B; color: #000000; font-size: 0.75em;}";
+
+document.getElementsByTagName("style")[1].textContent = ".failed{display: none;}";
+
+}
+
+else if (document.getElementById("filter").value=="failed")
+
+{
+
+document.getElementsByTagName("style")[1].textContent = ".failed{display: table-row;background-color: #FFFFFF;color: #000000; font-size: 0.7em; display: table-row;}";
+
+document.getElementsByTagName("style")[0].textContent = ".passed{display: none;}";
+
+}
+
+else
+
+{
+
+document.getElementsByTagName("style")[0].textContent = ".passed{display: table-row;background-color: #E1E1E1; border: 1px solid #4D7C7B; color: #000000; font-size: 0.75em;}";
+
+document.getElementsByTagName("style")[1].textContent = ".failed{display: table-row;background-color: #FFFFFF;color: #000000; font-size: 0.7em; display: table-row;}";
+
+}
+
+}
+
+</script>
+
+<script type="text/javascript">
+function filterStatus()
+{
+searchtext = (document.getElementById("txtStepValue").value).toLowerCase();
+if(searchtext!="")
+{
+var rowIndex = 0; // rowindex, in this case the first row of your table
+var table = document.getElementById('main'); // table to perform search on
+var row = table.getElementsByTagName("tr");
+irowcount = row.length
+for (i = 1; i < row.length; i++) {
+status = (row[i].getElementsByTagName("td")[1].textContent).toLowerCase();
+if (status.indexOf(searchtext) == -1) 
+{
+row[i].className = 'content notvisible'
+}}}
+else {
+window.location.reload()
+}}
+</script>
+<script type="text/javascript">
+function filterDetails()
+{
+searchtext = (document.getElementById("txtDetailsValue").value).toLowerCase();
+if(searchtext!="")
+{
+var rowIndex = 0; // rowindex, in this case the first row of your table
+var table = document.getElementById('main'); // table to perform search on
+var row = table.getElementsByTagName("tr");
+for (i = 1; i < row.length; i++) {
+Details = (row[i].getElementsByTagName("td")[2].textContent).toLowerCase();;
+if (Details.indexOf(searchtext) == -1) 
+{
+row[i].className = 'content notvisible'
+}}}
+else {
+window.location.reload()
+}}
+</script>
+<tr class='content passed' ><td align = 'center'>1</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>Start Iteration 1 </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Started Iteration 1</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 15:59:36</small></td> </tr>
+<tr class='content passed' ><td align = 'center'>2</td> 
+<td class='justified'><font face="Century Gothic" color="blue"><b>End of PO Creation Steps </b></font></td>
+<td class='justified'><font face="Century Gothic" color="blue"><b> Ended PO Creation Steps</b></font></td>
+<td class='Pass' align='center'><img  src='..\Logos\Pass.png' width='20' height='20'/></td> 
+<td><small>29-Jun-2020 15:59:36</small></td> </tr>

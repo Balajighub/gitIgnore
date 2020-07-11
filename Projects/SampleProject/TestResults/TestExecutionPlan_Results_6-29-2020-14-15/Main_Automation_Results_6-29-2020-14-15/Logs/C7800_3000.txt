@@ -1,0 +1,143 @@
+Test Name	Expected	Status	Time
+C7800_3000	<font face="Century Gothic" color="blue"><b> Started Iteration 1</b></font>	PASS	6/29/2020 2:25:31 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Started PO Creation Steps</b></font>	PASS	6/29/2020 2:25:31 PM
+C7800_3000	Ariba login page is launched successfully	PASS	6/29/2020 2:25:40 PM
+C7800_3000	Successfully entered value as "autodigir2" in 'UserName	PASS	6/29/2020 2:25:40 PM
+C7800_3000	Value successfully entered in 'Password' field	PASS	6/29/2020 2:25:41 PM
+C7800_3000	Clicked on 'Login' button successfully	PASS	6/29/2020 2:25:43 PM
+C7800_3000	Ariba Application is login successfully with Username autodigir2	PASS	6/29/2020 2:25:51 PM
+C7800_3000	Clicked on 'Create' button successfully	PASS	6/29/2020 2:25:55 PM
+C7800_3000	Navigated successfully to Create->Requisition	PASS	6/29/2020 2:25:57 PM
+C7800_3000	Successfully entered value as "CreatePurchaseRequisition" in 'Title	PASS	6/29/2020 2:25:59 PM
+C7800_3000	Successfully the field value entered as 'Delay Purchase'	PASS	6/29/2020 2:26:00 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:26:09 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:26:28 PM
+C7800_3000	Successfully entered value as "3000" in 'SearchName	PASS	6/29/2020 2:26:28 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:26:30 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:26:35 PM
+C7800_3000	Navigated successfully and 3000  Value has been selected	PASS	6/29/2020 2:26:35 PM
+C7800_3000	Successfully entered value as "AUTODESK 3000" in 'DeliverTo	PASS	6/29/2020 2:26:38 PM
+C7800_3000	Successfully entered value as "Create Requisition" in 'Comments	PASS	6/29/2020 2:26:38 PM
+C7800_3000	Requisition details are filled in Summary section	PASS	6/29/2020 2:26:39 PM
+C7800_3000	Clicked on 'ContinueShopping' button successfully	PASS	6/29/2020 2:26:41 PM
+C7800_3000	Catlog Home page exists Successfully	PASS	6/29/2020 2:26:43 PM
+C7800_3000	Clicked on 'Add Non-Catolog' button successfully	PASS	6/29/2020 2:26:51 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:27:02 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:27:20 PM
+C7800_3000	Successfully entered value as "3000" in 'SearchName	PASS	6/29/2020 2:27:20 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:27:22 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:27:27 PM
+C7800_3000	Navigated successfully and 3000  Value has been selected	PASS	6/29/2020 2:27:27 PM
+C7800_3000	Successfully entered value as "Line item 1" in 'Full Description	PASS	6/29/2020 2:27:27 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:27:36 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:27:54 PM
+C7800_3000	Successfully entered value as "104PC" in 'SearchName	PASS	6/29/2020 2:27:55 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:27:56 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:28:01 PM
+C7800_3000	Navigated successfully and 104PC  Value has been selected	PASS	6/29/2020 2:28:01 PM
+C7800_3000	Successfully entered value as "5" in 'Quantity	PASS	6/29/2020 2:28:03 PM
+C7800_3000	Successfully the value selected from 'Others' menu	PASS	6/29/2020 2:28:11 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:28:30 PM
+C7800_3000	Successfully entered value as "USD" in 'SearchName	PASS	6/29/2020 2:28:30 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:28:32 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:28:37 PM
+C7800_3000	Navigated successfully and USD  Value has been selected	PASS	6/29/2020 2:28:37 PM
+C7800_3000	Successfully entered value as "1000" in 'Price	PASS	6/29/2020 2:28:45 PM
+C7800_3000	Clicked on 'Update Amount' button successfully	PASS	6/29/2020 2:28:46 PM
+C7800_3000	"'AmountFields'" retrieved value is : "AmountFields"	PASS	6/29/2020 2:28:55 PM
+C7800_3000	Amount field is updated as $5,000.00 USD	PASS	6/29/2020 2:28:55 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:29:03 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:29:22 PM
+C7800_3000	Successfully entered value as "0000208077" in 'SearchName	PASS	6/29/2020 2:29:22 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:29:24 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:29:29 PM
+C7800_3000	Navigated successfully and 0000208077  Value has been selected	PASS	6/29/2020 2:29:29 PM
+C7800_3000	catalog details are filled	PASS	6/29/2020 2:29:29 PM
+C7800_3000	Clicked on 'Add to Cart' button successfully	PASS	6/29/2020 2:29:30 PM
+C7800_3000	catalog details are filled	PASS	6/29/2020 2:29:33 PM
+C7800_3000	Procced to check is verified Successfully	PASS	6/29/2020 2:29:34 PM
+C7800_3000	Clicked on 'Proceed to Check' button successfully	PASS	6/29/2020 2:29:36 PM
+C7800_3000	Successfully the value selected from 'Actions drop down' menu	PASS	6/29/2020 2:30:02 PM
+C7800_3000	Successfully the value selected from 'Account Assignment' list	PASS	6/29/2020 2:30:21 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:30:30 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:30:48 PM
+C7800_3000	Successfully entered value as "3000" in 'SearchName	PASS	6/29/2020 2:30:49 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:30:50 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:30:55 PM
+C7800_3000	Navigated successfully and 3000  Value has been selected	PASS	6/29/2020 2:30:55 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:31:12 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:31:31 PM
+C7800_3000	Successfully entered value as "0000660030" in 'SearchName	PASS	6/29/2020 2:31:31 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:31:33 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:31:38 PM
+C7800_3000	Navigated successfully and 0000660030  Value has been selected	PASS	6/29/2020 2:31:38 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:31:54 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:32:13 PM
+C7800_3000	Successfully entered value as "3000300053" in 'SearchName	PASS	6/29/2020 2:32:13 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:32:15 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:32:20 PM
+C7800_3000	Navigated successfully and 3000300053  Value has been selected	PASS	6/29/2020 2:32:20 PM
+C7800_3000	Accounting - by Line Item details are filled	PASS	6/29/2020 2:32:21 PM
+C7800_3000	Clicked on 'Split Accounting Button' button successfully	PASS	6/29/2020 2:32:23 PM
+C7800_3000	Successfully entered value as "50" in 'Split Percentage 1	PASS	6/29/2020 2:32:27 PM
+C7800_3000	Clicked on 'Cost Center menu' button successfully	PASS	6/29/2020 2:32:36 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:32:45 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:33:04 PM
+C7800_3000	Successfully entered value as "3000200004" in 'SearchName	PASS	6/29/2020 2:33:04 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:33:05 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:33:10 PM
+C7800_3000	Navigated successfully and 3000200004  Value has been selected	PASS	6/29/2020 2:33:11 PM
+C7800_3000	Successfully entered value as "50" in 'Split Percentage 2	PASS	6/29/2020 2:33:20 PM
+C7800_3000	Split percentage added to both Cost Centres	PASS	6/29/2020 2:33:28 PM
+C7800_3000	Clicked on 'OK Button' button successfully	PASS	6/29/2020 2:33:30 PM
+C7800_3000	Successfully the value selected from 'SearchMore' menu	PASS	6/29/2020 2:33:40 PM
+C7800_3000	Successfully the value selected from 'listType' list	PASS	6/29/2020 2:33:58 PM
+C7800_3000	Successfully entered value as "CAS1" in 'SearchName	PASS	6/29/2020 2:33:59 PM
+C7800_3000	Clicked on 'SearchButton' button successfully	PASS	6/29/2020 2:34:00 PM
+C7800_3000	Clicked on 'SelectButton' button successfully	PASS	6/29/2020 2:34:05 PM
+C7800_3000	Navigated successfully and CAS1  Value has been selected	PASS	6/29/2020 2:34:05 PM
+C7800_3000	Successfully entered value as "ARB" in 'Purchase Group	PASS	6/29/2020 2:34:08 PM
+C7800_3000	Shipping - by Line Item details are filled	PASS	6/29/2020 2:34:10 PM
+C7800_3000	Clicked on 'OK' button successfully	PASS	6/29/2020 2:34:12 PM
+C7800_3000	Clicked on 'Submit' button successfully	PASS	6/29/2020 2:34:15 PM
+C7800_3000	Requisition is submitted Successfully	PASS	6/29/2020 2:34:21 PM
+C7800_3000	Clicked on 'View Requisition' button successfully	PASS	6/29/2020 2:34:32 PM
+C7800_3000	Navigated to View Requisition Screen Successfully	PASS	6/29/2020 2:34:39 PM
+C7800_3000	Approvers are available to Delete	PASS	6/29/2020 2:34:47 PM
+C7800_3000	Clicked on 'Delete Approver --> OK' button successfully	PASS	6/29/2020 2:34:50 PM
+C7800_3000	Clicked on 'Delete Approver --> OK' button successfully	PASS	6/29/2020 2:35:09 PM
+C7800_3000	Clicked on 'Delete Approver --> OK' button successfully	PASS	6/29/2020 2:35:27 PM
+C7800_3000	Clicked on 'Delete Approver --> OK' button successfully	PASS	6/29/2020 2:35:39 PM
+C7800_3000	Clicked on 'Delete Approver --> OK' button successfully	PASS	6/29/2020 2:35:51 PM
+C7800_3000	Clicked on 'Delete Approver --> OK' button successfully	PASS	6/29/2020 2:36:03 PM
+C7800_3000	Approvers are not available to Delete	PASS	6/29/2020 2:36:14 PM
+C7800_3000	Status is diaplayed as Status: Approved	PASS	6/29/2020 2:36:16 PM
+C7800_3000	Requistion is diaplayed as REQ2032482	PASS	6/29/2020 2:36:16 PM
+C7800_3000	Clicked on 'Search button' button successfully	PASS	6/29/2020 2:36:22 PM
+C7800_3000	Successfully Clicked on Search Button in Ariba Page	PASS	6/29/2020 2:36:31 PM
+C7800_3000	Clicked successfully on Purchase Orderfield	PASS	6/29/2020 2:36:32 PM
+C7800_3000	Clicked successfully on Purchase Order	PASS	6/29/2020 2:36:32 PM
+C7800_3000	Values are matched and the compared values are 'Purchase Order'	PASS	6/29/2020 2:36:34 PM
+C7800_3000	Navigated to Purchase Order Screen Successfully	PASS	6/29/2020 2:36:34 PM
+C7800_3000	PurchaseOrder ID is Generated as "4500015109"	PASS	6/29/2020 2:36:39 PM
+C7800_3000	Payment Term ID is -DD05	PASS	6/29/2020 2:36:44 PM
+C7800_3000	Clicked on 'UserLogout' button successfully	PASS	6/29/2020 2:36:48 PM
+C7800_3000	Clicked on 'Logout' button successfully	PASS	6/29/2020 2:36:50 PM
+C7800_3000	Successfully logged out from Ariba application	PASS	6/29/2020 2:36:59 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Ended PO Creation Steps</b></font>	PASS	6/29/2020 2:37:01 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Started Invoice Creation Steps</b></font>	PASS	6/29/2020 2:38:16 PM
+C7800_3000	'Ariba Network Supplier' login screen launched successfully	PASS	6/29/2020 2:38:24 PM
+C7800_3000	Successfully entered value as "us1_adsk@autodesk.com" in 'UserName	PASS	6/29/2020 2:38:25 PM
+C7800_3000	Value successfully entered in 'Password' field	PASS	6/29/2020 2:38:26 PM
+C7800_3000	Clicked on 'Login' button successfully	PASS	6/29/2020 2:38:28 PM
+C7800_3000	User "us1_adsk@autodesk.com" should be able to log-in to the application	PASS	6/29/2020 2:38:38 PM
+C7800_3000	Successfully entered value as "4500015109" in 'PO Number	PASS	6/29/2020 2:38:44 PM
+C7800_3000	Clicked on 'Search' button successfully	PASS	6/29/2020 2:38:50 PM
+C7800_3000	Search PO Number - 4500015109	PASS	6/29/2020 2:38:57 PM
+C7800_3000	Action type is selected as Standard Invoice	FAIL	6/29/2020 2:38:58 PM
+C7800_3000	Invoice Number is not generated	FAIL	6/29/2020 2:38:58 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Ended Invoice Creation Steps</b></font>	PASS	6/29/2020 2:38:59 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Started Credit Memo Creation Steps</b></font>	PASS	6/29/2020 2:38:59 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Ended Credit Memo Creation Steps</b></font>	PASS	6/29/2020 2:38:59 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Ended Invoice Processing in VIM</b></font>	PASS	6/29/2020 2:39:13 PM
+C7800_3000	<font face="Century Gothic" color="blue"><b> Ended Credit Memo Processing in VIM</b></font>	PASS	6/29/2020 2:39:15 PM

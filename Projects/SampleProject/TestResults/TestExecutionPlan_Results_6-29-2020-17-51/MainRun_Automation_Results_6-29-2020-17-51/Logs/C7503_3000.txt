@@ -1,0 +1,12 @@
+Test Name	Expected	Status	Time
+C7503_3000	<font face="Century Gothic" color="blue"><b> Started Iteration 1</b></font>	PASS	29-06-2020 17:52:05
+C7503_3000	<font face="Century Gothic" color="blue"><b> Started PO Creation Steps</b></font>	PASS	29-06-2020 17:52:05
+C7503_3000	Ariba login page is launched successfully	PASS	29-06-2020 17:52:16
+C7503_3000	Successfully entered value as "autodigir2" in 'UserName	PASS	29-06-2020 17:52:16
+C7503_3000	Value successfully entered in 'Password' field	PASS	29-06-2020 17:52:18
+C7503_3000	Clicked on 'Login' button successfully	PASS	29-06-2020 17:52:20
+C7503_3000	Ariba Application is login successfully with Username autodigir2	PASS	29-06-2020 17:52:28
+C7503_3000	Clicked on 'Create' button successfully	PASS	29-06-2020 17:52:32
+C7503_3000	Navigated successfully to Create->Requisition	PASS	29-06-2020 17:52:34
+C7503_3000	Successfully entered value as "CreatePurchaseRequisition" in 'Title	PASS	29-06-2020 17:52:36
+C7503_3000	Successfully the field value entered as 'Delay Purchase'	PASS	29-06-2020 17:52:37
