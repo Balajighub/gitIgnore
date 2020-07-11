@@ -1,6 +1,7 @@
 **/thumbs.db     
 **/*.lck		
-**/TestResults/* 
+**/*.png
+**/TestResults
 **/*~$
 
 
